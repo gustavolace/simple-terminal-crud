@@ -1,4 +1,4 @@
-from src._functions import incluir, alterar, excluir, listagem_geral
+from src._functions import incluir, alterar, excluir, listagem_geral, listagem_saldo
 
 print("1 - Incluir")
 print("2 - Alterar")
@@ -31,6 +31,6 @@ match (opcao):
     case '4': 
         listagem_geral()
     case '5':
-        pass
-        """ listagem_saldo() """
+        id = input("Digite o id \n")
+        listagem_saldo(id) 
             
